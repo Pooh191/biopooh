@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #74ebd5 0%, #acb6e5 50%, #6dd5ed 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.center {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+section.box1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.desc h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.desc p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.link h3 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.link p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.link ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: white;
+}
+
+::selection {
+    background: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .center {
+        max-width: 90%;
+    }
+
+    .desc h2 {
+        font-size: 28px;
+    }
+
+    .link h3 {
+        font-size: 22px;
+    }
+
+    .link p, .link ul li {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
