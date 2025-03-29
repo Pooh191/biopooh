@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooh Linktree</title>
+    <meta name="title" content="Pooh_Linktree" />
+    <meta name="description" content="ช่องทางการติดตามทั้งหมดของ Pooh" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pooh Linktree" />
+    <meta property="og:description" content="ช่องทางการติดตามทั้งหมดของ Pooh" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Pooh Linktree" />
+    <meta property="twitter:description" content="ช่องทางการติดตามทั้งหมดของ Pooh" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <section class="box1">
+        <div class="center">
+            <div class="container">
+                <div class="logo">
+                    <div class="img-logo"><img src="img/logo.jpg"></div>
+                </div>
+                <div class="desc">
+                    <h2>Pooh</h2>
+                    <p>Student / Developer </p>
+                </div>
+                <div class="link">  
+                    <a href="html/product-reviews.html">
+                        <div class="link-a"><i class="fas fa-folder"></i>
+                            <h3>อุปกรณ์ที่ใช้ในชีวิตประจำวัน</h3>
+                        </div>
+                    </a>
+                    <a href="html/private-index.html">
+                        <div class="link-a"><i class="fas fa-user"></i>
+                            <h3>ช่องทางการติดต่อและติดตาม</h3>
+                        </div>
+                    </a>
+                    <a href="html/web-index.html">
+                        <div class="link-a"><i class="fa-solid fa-earth-asia"></i>
+                            <h3>แจกลิ้งค์เว็บ</h3>
+                        </div>
+                    </a> 
+                    <a href="html/files-index.html">
+                        <div class="link-a"><i class="fas fa-folder"></i>
+                            <h3>แจกไฟล์ฟรี</h3>
+                        </div>
+                    </a>                               
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--box1-->
+
+</section>
+<footer>
+    <p>Copyright © 2024 - <span id="currentYear"></span><br>
+        By Teeraphat Thongcam (Emerald Empire Studio) <br>
+        Made By Thanakorn Sae-jong </p>
+</footer>
+
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    (function() {
+        const element = new Image();
+        Object.defineProperty(element, 'id', {
+            get() {
+                alert('DevTools Detected');
+            }
+        });
+        console.log(element);
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="Pooh Introduction" />
+        <meta name="description" content="แนะนำตัว - Pooh" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Pooh Introduction" />
+        <meta property="og:description" content="แนะนำตัว - Pooh" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Pooh Introduction" />
+        <meta property="twitter:description" content="แนะนำตัว - Pooh" />
+        <title>Pooh Introduction</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="../css/introduce-styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <section class="box1">
+            <div class="center">
+                <div class="container">
+                    <div class="logo">
+                        <div class="img-logo"><img src="../img/logo.jpg"></div>
+                    </div>
+                    <div class="desc">
+                        <h2>Pooh</h2>
+                        <p>Student / Developer</p>
+                    </div>
+                    <div class="link">
+                        <h3>About Me</h3>
+                        <p>สวัสดีผมชื่อ เด็กชายธนากร แซ่จอง ชื่อเล่น ภู ปัจจุบันกำลังศึกษาอยู่ที่มัธยมศึกษาปีที่ 2/13 <br>
+                            โรงเรียนสุรวิทยาคาร เป็นหัวหน้าห้องชั้นมัธยมศึกษาปีที่ 2/13
+                        </p>
+                        <h3>Hobbies</h3>
+                        <ul>
+                            <li>ชอบเขียนโค๊ดเล่นๆ: เพื่อเป็นการฝึกตัวเองในตัว</li>
+                            <li>ชอบเล่นเกม: ได้เล่นเกมแล้วรู้สึกผ่อนคลาย</li>
+                            <li>ชอบฟังเพลง: การเขียนโค๊ดนั้นต้องใช้สมาธิในการเขียนเพื่อทำให้ตัวเองมีแรงมาเขียน</li>
+                        </ul>
+                        <h3>Languages I Can Write</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright © 2024 - <span id="currentYear"></span><br>
+                By Teeraphat Thongcam (Emerald Empire Studio) <br>
+                Made By Thanakorn Sae-jong </p>
+        </footer>
+       
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });
+
+            (function() {
+                const element = new Image();
+                Object.defineProperty(element, 'id', {
+                    get() {
+                        alert('DevTools Detected');
+                    }
+                });
+                console.log(element);
+            })();
+        </script>
+    </body>
+</html>
